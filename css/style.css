@@ -1,0 +1,290 @@
+body {
+    font-family: sans-serif;
+    font-size: 1rem;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+section {
+    scroll-margin-top: 120px;
+    padding-bottom: 80px;
+}
+
+.l-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 0 1rem;
+}
+
+.l-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    position: sticky;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.l-header__logo {
+    margin: 0;
+}
+
+.l-header__nav {}
+
+.l-header__nav ul {
+    display: flex;
+    margin: 0;
+}
+
+.l-header__nav a {
+    display: block;
+    padding: 10px;
+}
+
+.l-main {
+    padding-bottom: 5rem
+}
+
+.l-visual {
+    text-align: center;
+}
+
+.l-visual img {
+    height: 500px;
+    object-fit: cover;
+}
+
+.l-footer {
+    text-align: center;
+    background: #000;
+    color: #fff;
+}
+
+
+
+.c-button {
+    border: solid 1px #000;
+    border-radius: 6px;
+    padding: 10px 20px;
+    box-shadow: 2px 2px 0 #a0a0a0;
+    color: inherit;
+    text-decoration: none;
+    display: inline-block;
+    transition: all .3s;
+}
+
+.c-button:hover {
+    transform: translate(1px, 1px);
+    box-shadow: 1px 1px;
+}
+
+.c-heading {
+    text-align: center;
+    margin: 2em 0 1em;
+    scroll-margin-top: 5rem;
+}
+
+.c-heading::after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 5rem;
+    background: #000;
+    margin: auto;
+}
+
+.c-news-list {
+    list-style: none;
+    padding: 0;
+}
+
+.c-news-list li {
+    margin-bottom: 0.5rem;
+    border-bottom: solid 1px #ccc;
+    padding-bottom: 0.5rem;
+}
+
+.c-news-list a {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    align-items: flex-start;
+}
+
+.c-news-list a:hover {
+    opacity: 0.8;
+}
+
+.c-news-list__date,
+.c-news-list__category {
+    flex-shrink: 0;
+}
+
+.c-news-list__category {
+    background: #333;
+    color: #fff;
+    font-size: 0.8rem;
+    margin: 0 0.5rem;
+    padding: 0.1rem 0.5rem;
+}
+
+.c-place-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+}
+
+.c-place-list li {
+    width: 48%;
+    margin: 1%;
+}
+
+.c-place-list a {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    grid-template-rows: min-content 1fr 1fr;
+    grid-auto-rows: auto;
+    gap: 15px;
+    color: inherit;
+    text-decoration: none;
+    border: solid 1px #ccc;
+    padding: 10px;
+}
+
+@media screen and (max-width: 640px) {
+    .c-place-list a {
+        display: block;
+        height: 100%;
+    }
+}
+
+.c-place-list a:hover {
+    opacity: 0.8;
+}
+
+.c-place-list__image {
+    grid-row: span 2;
+}
+
+.c-place-list__image img {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+}
+
+.c-place-list__category {
+    margin: 0;
+    padding: 0;
+    font-size: 0.8rem;
+    list-style: none;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.c-place-list__category li {
+    width: fit-content;
+    background: #eee;
+    padding: 1px 10px;
+}
+
+.c-place-list__title {
+    margin: 0;
+    font-weight: bold;
+}
+
+.c-place-list__text {
+    padding: 0;
+    margin: 0;
+    grid-column: span 2;
+}
+
+.c-form input[type="text"],
+.c-form input[type="email"],
+.c-form textarea {
+    width: 100%;
+    font-size: 16px;
+    padding: 10px;
+}
+
+.c-form select {
+    font-size: 16px;
+    padding: 10px;
+}
+
+.c-form__item {
+    padding: 0 0 1rem;
+}
+
+.c-form__item label {
+    display: block;
+}
+
+.c-form__button {
+    text-align: center;
+}
+
+.c-form__button input[type="submit"],
+.c-form__button button {
+    border: none;
+    appearance: none;
+    padding: 15px 40px;
+    font-size: 16px;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+}
+
+.c-form__button input[type="submit"]:hover,
+.c-form__button button:hover {
+    opacity: 0.8;
+}
+
+.c-categories {
+    display: flex;
+    gap: 20px;
+}
+
+.c-categories>div {
+    padding: 10px;
+    border: solid 1px #eee;
+}
+
+.c-categories :is(p, ul) {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+.u-text-center {
+    text-align: center;
+}
+
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.nav-links a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 20px;
+    background: #eee;
+    color: inherit;
+    min-width: 140px;
+    border-radius: 6px;
+}
